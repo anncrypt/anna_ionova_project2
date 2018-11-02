@@ -1,0 +1,17 @@
+/* BASE STYLES */
+html {
+    font-size: 62.5%;
+    /* font-size: 10px */
+}
+
+body {
+    font-family: $base-font;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: $dark-color;
+    text-align: left;
+}
+
+.wrapper {
+    max-width: 1600px;
+}

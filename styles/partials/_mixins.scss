@@ -1,0 +1,21 @@
+@mixin font-size($size-value) {
+    font-family: $accent-font; 
+    font-size: $size-value;
+    font-weight: normal;
+    color: $dark-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+// Heading Text (Blog & News, Contact Me)
+// AbrilFatface, Regular, 80px
+// Line height: 92px, Letter spacing: 1px
+// Heading Text (Who's Willow, Willow's Journey)
+// AbrilFatface, Regular, 42px
+// Letter spacing: 1px
+// Heading Text (Favourite Things, Photos, About)
+// AbrilFatface, Regular, 32px
+// Letter spacing: 1px
+// Heading Text (About Willow, Recent Posts)
+// AbrilFatface, Regular, 24px
+// Letter spacing: 1px
