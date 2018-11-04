@@ -3,12 +3,28 @@
 // JOURNEY SECTION
 .journey-section {
     background: $light-color;
+    padding: 60px 0;
     .journey-section__wrapper {
-        .journey-section__image {
+        display: flex;
+        align-items: flex-start;
 
+        .journey-section__image {
+            width: 30%;
+            // box-shadow: 15px 15px $secondary-color;
+            img {
+                display: block;
+                width: 70%;
+                box-shadow: 15px 15px $secondary-color;
+                
+        
+            }
         }
         .journey-section__content {
-
+            width: 70%;
+            h2 {
+                margin-top: 0;
+                line-height: 1;
+            }
         }
     }
 }

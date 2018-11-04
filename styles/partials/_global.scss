@@ -12,9 +12,10 @@ body {
     text-align: left;
 }
 
-// section {
-//     margin: 20px 0;
-// }
+p {
+    line-height: 3.2rem;
+}
+
 
 .wrapper--main {
     max-width: 1600px;
@@ -35,22 +36,10 @@ body {
     
 }
 
-.main-heading--large {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 9.2rem;
-    &.main-heading__image {
-        max-width: 100%;
-    }
-    &.main-heading__text {
-        font-size: 15rem;
-        color: $light-color;
-    }
-}
-
 h2 {
     @include font-size(4.2rem);
 }
+
 
 h3 {
     @include font-size(3.2rem);

@@ -145,6 +145,9 @@ body {
   color: #1f1f1f;
   text-align: left; }
 
+p {
+  line-height: 3.2rem; }
+
 .wrapper--main {
   max-width: 1600px;
   margin: 0 auto;
@@ -160,34 +163,24 @@ body {
   font-size: 8rem;
   font-weight: normal;
   color: #1f1f1f;
-  text-transform: uppercase; }
-
-.main-heading--large {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  line-height: 9.2rem; }
-  .main-heading--large.main-heading__image {
-    max-width: 100%; }
-  .main-heading--large.main-heading__text {
-    font-size: 15rem;
-    color: #f6f6f6; }
+  text-transform: uppercase;
+  margin: 0; }
 
 h2 {
   font-family: "Abril Fatface", cursive;
   font-size: 4.2rem;
   font-weight: normal;
   color: #1f1f1f;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 h3 {
   font-family: "Abril Fatface", cursive;
   font-size: 3.2rem;
   font-weight: normal;
   color: #1f1f1f;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 h4 {
   font-family: "Abril Fatface", cursive;
@@ -195,6 +188,7 @@ h4 {
   font-weight: normal;
   color: #1f1f1f;
   text-transform: uppercase;
+  margin: 0;
   margin: 0; }
 
 .header {
@@ -222,8 +216,7 @@ h4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-left: 0;
-    border: 2px solid peachpuff; }
+    padding-left: 0; }
   .header.header--home {
     min-height: 90vh;
     background: #345231; }
@@ -241,40 +234,63 @@ h4 {
   list-style: none;
   margin: 0 10px;
   font-size: 2rem;
-  font-weight: bold;
-  border: 2px solid greenyellow; }
+  font-weight: bold; }
   .nav__item .nav__link {
     text-decoration: none;
     color: #f6f6f6;
-    padding: 20px 20px;
-    border: 2px solid navy; }
+    padding: 20px 20px; }
     .nav__item .nav__link:hover {
       color: #e4a436; }
-  .nav__item.nav__item--logo {
-    line-height: 0; }
+  .nav__item.nav__item--logo .nav__heading {
+    color: #f6f6f6; }
 
 .main-heading__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: space-around;
-  -ms-flex-align: space-around;
-  align-items: space-around;
-  border: solid 2px tomato; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .main-heading__container .main-heading--large {
-    width: 80%; }
+    width: 80%;
+    position: relative;
+    margin-left: 60px; }
     .main-heading__container .main-heading--large .main-heading__image {
-      height: 100%; }
-      .main-heading__container .main-heading--large .main-heading__imageimg {
+      height: 100%;
+      position: absolute;
+      left: -60px; }
+      .main-heading__container .main-heading--large .main-heading__image img {
         display: block;
         width: 100%; }
     .main-heading__container .main-heading--large .main-heading__text {
+      margin: 0 auto;
+      font-size: 15rem;
       color: #f6f6f6; }
-  .main-heading__container.header-photo {
-    width: 20%; }
+  .main-heading__container .header-photo .header-photo__image {
+    width: 100%; }
 
 .journey-section {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding: 60px 0; }
+  .journey-section .journey-section__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .journey-section .journey-section__wrapper .journey-section__image {
+      width: 30%; }
+      .journey-section .journey-section__wrapper .journey-section__image img {
+        display: block;
+        width: 70%;
+        -webkit-box-shadow: 15px 15px #709b6b;
+        box-shadow: 15px 15px #709b6b; }
+    .journey-section .journey-section__wrapper .journey-section__content {
+      width: 70%; }
+      .journey-section .journey-section__wrapper .journey-section__content h2 {
+        margin-top: 0;
+        line-height: 1; }
 
 .banner-image {
   background-image: url(../assets/home-image-5.jpg);
@@ -355,3 +371,14 @@ h4 {
   .footer p {
     margin: 0;
     padding: 10px; }
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: #e4a436; }
