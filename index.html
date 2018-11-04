@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- main wrapper that wraps the contents -->
-    <div class="wrapper">
+    <div class="wrapper--main">
         <!-- header starts -->
         <header class="header header--home">
             <nav class="nav">
@@ -23,7 +23,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="#">About</a>
                     </li>
-                    <li class="nav__item nav__item--featured">
+                    <li class="nav__item nav__item--logo">
                         <h2 class="nav__heading">Willow</h2>
                     </li>
                     <li class="nav__item">
@@ -35,9 +35,11 @@
                 </ul>
             </nav>
             <!-- container for h1 & img -->
-            <div>
+            <div class="main-heading__container wrapper--narrow">
                 <div class="main-heading main-heading--large">
-                    <img class="main-heading__image" src="./assets/circle-text.png" alt="circular text around the heading 'Daily musings of'">
+                    <div class="main-heading__image">
+                        <img src="./assets/circle-text.png" alt="circular text around the heading 'Daily musings of'">
+                    </div>
                     <h1 class="main-heading__text">
                         <!-- <span class="span--visually-hidden">Daily musings of</span> -->
                         Willow
@@ -50,16 +52,16 @@
         </header>
         <!-- header ends -->
         <!-- main starts -->
-        <main>
+        <!-- <main class="wrapper--narrow"> -->
             <!-- about section starts -->
-            <section class="about-section">
+            <section class="about-section wrapper--narrow">
                 <h2 class="about-section__heading">Who's Willow?</h2>
                 <p class="about-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione cupiditate fugit eius qui voluptates repellat, odit delectus laboriosam ex labore sed exercitationem enim tempora sit temporibus beatae repellendus quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem!</p>
                 <a class="btn" href="#">Find out more</a>
             </section>
             <!-- about section ends -->
             <!-- blogpost section starts -->
-            <section class="blog-section">
+            <section class="blog-section wrapper--narrow">
                 <!-- left-img-aligned blogpost starts -->
                 <div class="blogpost">
                     <!-- blogpost's image container -->
@@ -91,18 +93,24 @@
             </section>
             <!-- blogpost section starts -->
             <!-- journey section starts -->
-            <section class="journey-section">
-                <img src="./assets/home-image-4.jpg" alt="">
-                <h2>Willow's journey</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis perferendis ipsum amet nemo. Molestias ipsa quia delectus, rem necessitatibus obcaecati! Accusamus libero, quos fugiat, explicabo culpa, delectus aspernatur dignissimos saepe quae ipsum enim dolorem soluta itaque sint ab suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus!</p>
-                <a class="btn" href="#"></a>
+            <section class="journey-section"> 
+                <div class="journey-section__wrapper wrapper--narrow">
+                    <div class="journey-section__image">
+                        <img src="./assets/home-image-4.jpg" alt="">
+                    </div>
+                    <div class="journey-section__content">
+                        <h2>Willow's journey</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis perferendis ipsum amet nemo. Molestias ipsa quia delectus, rem necessitatibus obcaecati! Accusamus libero, quos fugiat, explicabo culpa, delectus aspernatur dignissimos saepe quae ipsum enim dolorem soluta itaque sint ab suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus!</p>
+                        <a class="btn" href="#"></a>
+                    </div>
+                </div>
             </section>
             <!-- journey section starts -->
             <!-- banner -->
-            <div class="banner"></div>
+            <div class="banner-image"></div>
 
             <!-- gallery section starts -->
-            <section class="gallery-section">
+            <section class="gallery-section wrapper--narrow">
                 <ul class="gallery-list">
                     <li class="gallery-list__item">
                         <img src="./assets/home-image-6.jpg" alt="">
@@ -118,50 +126,60 @@
             <!-- gallery section ends -->
             <!-- site info section starts -->
             <section class="site-info-section">
-                <div class="site-info-item">
-                    <div class="site-info-item__icon">
-                        <i class="fas fa-image"></i>
+                <div class="site-info-section__wrapper wrapper--narrow">
+                    <div class="site-info-item">
+                        <div class="site-info-item__icon">
+                            <a href="#" class="site-info-item__link">
+                                <i class="fas fa-image"></i>
+                            </a>
+                        </div>
+                        <div class="site-info-item__content">
+                            <h4>Photos</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis quibusdam iure, nihil similique dolorum.</p>
+                        </div>
                     </div>
-                    <div class="site-info-item__content">
-                        <h4>Photos</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis quibusdam iure, nihil similique dolorum nobis excepturi vero, culpa ducimus harum soluta quod! Est, quasi!</p>
+                    <div class="site-info-item">
+                        <div class="site-info-item__icon">
+                            <a href="#" class="site-info-item__link">
+                                <i class="fas fa-desktop"></i>
+                            </a>
+                        </div>
+                        <div class="site-info-item__content">
+                            <h4>Blog</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
+                            quibusdam iure, nihil similique dolorum.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="site-info-item">
-                    <div class="site-info-item__icon">
-                        <i class="fas fa-desktop"></i>
+                    <div class="site-info-item">
+                        <div class="site-info-item__icon">
+                            <a href="#" class="site-info-item__link">
+                                <i class="fas fa-user-alt"></i>
+                            </a>
+                        </div>
+                        <div class="site-info-item__content">
+                            <h4>About</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
+                            quibusdam iure, nihil similique dolorum.</p>
+                        </div>
                     </div>
-                    <div class="site-info-item__content">
-                        <h4>Blog</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
-                        quibusdam iure, nihil similique dolorum nobis excepturi vero, culpa ducimus harum soluta quod! Est, quasi!</p>
-                    </div>
-                </div>
-                <div class="site-info-item">
-                    <div class="site-info-item__icon">
-                        <i class="fas fa-user-alt"></i>
-                    </div>
-                    <div class="site-info-item__content">
-                        <h4>About</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
-                        quibusdam iure, nihil similique dolorum nobis excepturi vero, culpa ducimus harum soluta quod! Est, quasi!</p>
-                    </div>
-                </div>
-                <div class="site-info-item">
-                    <div class="site-info-item__icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="site-info-item__content">
-                        <h4>Contact Me</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
-                        quibusdam iure, nihil similique dolorum nobis excepturi vero, culpa ducimus harum soluta quod! Est, quasi!</p>
+                    <div class="site-info-item">
+                        <div class="site-info-item__icon">
+                            <a href="#" class="site-info-item__link">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                        </div>
+                        <div class="site-info-item__content">
+                            <h4>Contact Me</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsum, tempora perspiciatis facere eaque reiciendis
+                            quibusdam iure, nihil similique dolorum.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- site info section ends -->
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>Copyright &copy 2018 HackerYou</p>
         </footer>
         <!-- footer ends -->

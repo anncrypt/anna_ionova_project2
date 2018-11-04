@@ -1,12 +1,95 @@
 .header {
     display: flex;
-}
-
-.header--home {
-    // position: relative;
-    min-height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     width: 100%;
-    background: $primary-color;
     color: $light-color;
+        .nav__list {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           align-items: center;
+           padding-left: 0;
+        //    margin: 20px;
+           border: 2px solid peachpuff;
+        }
+
+    &.header--home {
+    min-height: 90vh;
+    background: $primary-color;
+    }
+
+    &.header--blog-news {
+    min-height: 30vh;
+    background-image: url(../assets/blog-image-1.jpg);
+    }
+
+    &.header--contact-me {
+    min-height: 30vh;
+    width: 100%;
+    background-image: url(../assets/contact-image-1.jpg);
+    color: $light-color;
+    }
 }
 
+
+ .nav__item {
+    display: inline;
+    list-style: none;
+    margin: 0 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    
+    .nav__link {
+        text-decoration: none;
+        color: $light-color;
+        // padding: 5px 10px;
+        padding: 20px 20px;
+        border: 2px solid navy;
+        &:hover {
+        color: $accent-color;
+        }
+        // &:nth-of-type(4),
+        // &:nth-of-type(5) {
+        //     order: 1;
+        // }
+    }
+    &.nav__item--logo {
+        line-height: 0;
+    }
+
+}
+
+.main-heading__container {
+    display: flex;
+    align-items: space-around;
+    border: solid 2px tomato;
+    
+    .main-heading--large {
+        width: 80%;
+        .main-heading__image {
+            height: 100%;
+            &img {
+                display: block;
+                width:100%
+            }
+        }
+        .main-heading__text {
+            color: $light-color;
+        }
+    }
+    &.header-photo {
+        width: 20%;
+    }
+    
+}
+
+.header-photo {
+    // text-align: right;
+    // position: absolute;
+    // top: 20%;
+    // right: 10%;
+    // min-height: 80vh;
+}

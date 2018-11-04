@@ -12,6 +12,51 @@ body {
     text-align: left;
 }
 
-.wrapper {
+// section {
+//     margin: 20px 0;
+// }
+
+.wrapper--main {
     max-width: 1600px;
+    margin: 0 auto;
+    border: 2px tomato solid;
+}
+
+.wrapper--narrow {
+    // display: flex;
+    width: 80%;
+    margin: 40px auto;
+    border: 2px solid yellow;
+}
+
+// h1
+.main-heading {
+    @include font-size(8rem);
+    
+}
+
+.main-heading--large {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 9.2rem;
+    &.main-heading__image {
+        max-width: 100%;
+    }
+    &.main-heading__text {
+        font-size: 15rem;
+        color: $light-color;
+    }
+}
+
+h2 {
+    @include font-size(4.2rem);
+}
+
+h3 {
+    @include font-size(3.2rem);
+}
+
+h4 {
+    @include font-size(2.4rem);
+    margin: 0;
 }

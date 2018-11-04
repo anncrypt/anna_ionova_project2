@@ -1,0 +1,108 @@
+
+
+// JOURNEY SECTION
+.journey-section {
+    background: $light-color;
+    .journey-section__wrapper {
+        .journey-section__image {
+
+        }
+        .journey-section__content {
+
+        }
+    }
+}
+
+
+
+
+
+// BANNER SECTION
+.banner-image {
+    background-image: url(../assets/home-image-5.jpg);
+    // width: 100px;
+    // height: 400px;
+    // background-position: center;
+    // background-position: right top;
+    // background-repeat: no-repeat;
+    background-size: auto;
+    // background-position: center center;
+    object-fit: cover;
+    min-height: 50vh;
+}
+
+
+// GALLERY SECTION
+.gallery-section {
+    .gallery-list {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+        .gallery-list__item {
+            width: 31%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &.gallery-list__item:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+// INFO SECTION
+.site-info-section {
+    background: $light-color;
+    padding: 30px 0;
+    .site-info-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+        .site-info-item {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 10px 0;
+        }
+    }  
+} 
+        
+.site-info-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: $accent-color;
+    .site-info-item__link {
+        line-height: 0;
+        padding: 10px;
+        color: $dark-color;
+        .fas {
+            text-align: center;      
+        }
+    }
+}
+
+// &.site-info-item__content {
+    
+    
+// }
+
+// .site-info-item__link {
+//     color: $dark-color;
+//     padding: 10px;
+//     line-height: 0;
+//     .fas {
+//         text-align: center;      
+//     }
+// }
+
