@@ -1,3 +1,54 @@
+// HOME PAGE 1
+// ABOUT SECTION
+.about-section {
+    padding: 60px 0;
+    background: $light-color;
+    .about-section__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+// BLOGPOST SECTION
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    .blogpost {
+        display: flex;
+        justify-content: space-between;
+        
+        .blogpost__image {
+            width: 50%;
+            box-shadow: 20px 20px $secondary-color;
+            img {
+                display: block;
+                width: 100%;
+                // box-shadow: 20px 20px $secondary-color;
+            }
+            
+        }
+        .blogpost__content{
+            width: 40%;
+            margin: 20px 60px;
+        }
+    }
+    .blogpost--left-side {
+        flex-direction: row-reverse;
+        .blogpost__image {
+            box-shadow: 20px 20px $primary-color;
+            img {
+                // box-shadow: 20px 20px $primary-color;
+            }
+        }
+        .blogpost__content{
+            text-align: right;
+        }
+    }
+}
 
 
 // JOURNEY SECTION
@@ -6,17 +57,14 @@
     padding: 60px 0;
     .journey-section__wrapper {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
 
         .journey-section__image {
-            width: 30%;
-            // box-shadow: 15px 15px $secondary-color;
+            width: 40%;
             img {
                 display: block;
                 width: 70%;
                 box-shadow: 15px 15px $secondary-color;
-                
-        
             }
         }
         .journey-section__content {
@@ -28,9 +76,6 @@
         }
     }
 }
-
-
-
 
 
 // BANNER SECTION
@@ -108,17 +153,6 @@
     }
 }
 
-// &.site-info-item__content {
-    
-    
-// }
 
-// .site-info-item__link {
-//     color: $dark-color;
-//     padding: 10px;
-//     line-height: 0;
-//     .fas {
-//         text-align: center;      
-//     }
-// }
+
 

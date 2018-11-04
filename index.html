@@ -24,7 +24,8 @@
                         <a class="nav__link" href="#">About</a>
                     </li>
                     <li class="nav__item nav__item--logo">
-                        <h2 class="nav__heading">Willow</h2>
+                        <!-- for accessibility purposes, so it doesn't appear as one of the menu options on screenreaders-->
+                        <h2 class="nav__heading" aria-hidden="true">Willow</h2>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Blog</a>
@@ -54,10 +55,12 @@
         <!-- main starts -->
         <!-- <main class="wrapper--narrow"> -->
             <!-- about section starts -->
-            <section class="about-section wrapper--narrow">
-                <h2 class="about-section__heading">Who's Willow?</h2>
-                <p class="about-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione cupiditate fugit eius qui voluptates repellat, odit delectus laboriosam ex labore sed exercitationem enim tempora sit temporibus beatae repellendus quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem!</p>
-                <a class="btn" href="#">Find out more</a>
+            <section class="about-section">
+                <div class="about-section__wrapper wrapper--narrow">
+                    <h2 class="about-section__heading">Who's Willow?</h2>
+                    <p class="about-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ratione cupiditate fugit eius qui voluptates repellat, odit delectus laboriosam ex labore sed exercitationem enim tempora sit temporibus beatae repellendus quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatem!</p>
+                    <a class="btn" href="#">Find out more</a>
+                </div>
             </section>
             <!-- about section ends -->
             <!-- blogpost section starts -->
@@ -101,7 +104,7 @@
                     <div class="journey-section__content">
                         <h2>Willow's journey</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis perferendis ipsum amet nemo. Molestias ipsa quia delectus, rem necessitatibus obcaecati! Accusamus libero, quos fugiat, explicabo culpa, delectus aspernatur dignissimos saepe quae ipsum enim dolorem soluta itaque sint ab suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, minus!</p>
-                        <a class="btn" href="#"></a>
+                        <a class="btn" href="#">Find out more</a>
                     </div>
                 </div>
             </section>

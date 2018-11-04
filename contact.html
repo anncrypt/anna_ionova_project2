@@ -43,28 +43,31 @@
         <!-- small wrapper starts -->
         <div class="wrapper--small">
             <!-- aside section starts -->
-            <aside>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <aside class="aside-section">
+                <ul class="aside-social">
+                    <li class="aside-social__item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="aside-social__item"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="aside-social__item"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="aside-social__item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
-                <p>info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V 2D5</p>
+                <div class="aside-contact">
+                    <p class="aside-contact__email">info@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V 2D5</p>
+                </div>
             </aside>
-            <section>
-                <form action="" method="POST" name="comment-form">
+            <section class="contact-form-section">
+                <form class="message-form message-form--contact"
+                action="" method="POST" name="comment-form">
                     <label for="user-name"></label>
                     <input type="text" name="user-name" placeholder="Name">
                     <label for="email-address"></label>
                     <input type="email" name="email-address" placeholder="Email address">
                     <label for="comment-form"></label>
                     <textarea name="comment-form" placeholder="Comment" cols="40" rows="10"></textarea>
-                    <button class="btn">Post comment</button>
+                    <button class="btn message-form__button">Post comment</button>
                 </form>
             </section>
         </div>

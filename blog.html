@@ -17,14 +17,15 @@
         <header class="header header--blog-news">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item nav__item--featured">
-                        <h2 class="nav__heading">Willow</h2>
-                    </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Home</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">About</a>
+                    </li>
+                    <li class="nav__item nav__item--logo">
+                        <!-- for accessibility purposes, so it doesn't appear as one of the menu options on screenreaders-->
+                        <h2 class="nav__heading" aria-hidden="true">Willow</h2>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Blog</a>
@@ -35,33 +36,33 @@
                 </ul>
             </nav>
             <!-- container for main-heading--small -->
-            <!-- <div class="main-heading main-heading--small"> -->
+            <div class="main-heading main-heading--small wrapper--narrow">
                     <h1>Blog & News</h1>
-            <!-- </div> -->
+            </div>
         </header>
         <!-- header ends -->
-        <!-- small wrapper starts -->
-        <div class="wrapper--small">
+        <!-- narrow wrapper starts -->
+        <div class="blog-news__wrapper wrapper--narrow">
             <!-- aside section starts -->
-            <aside>
-                <div>
-                    <img src="./assets/blog-image-2.jpg" alt="">
+            <aside class="aside-section">
+                <div class="aside-about">
+                    <img class="aside-about__image" src="./assets/blog-image-2.jpg" alt="">
                     <h3>Recent posts</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis tenetur quibusdam suscipit perferendis nihil sunt voluptate praesentium temporibus dolor. <span><a href="#">Find out more.</a></span></p>
+                    <p class="aside-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus debitis tenetur quibusdam suscipit perferendis nihil sunt voluptate praesentium temporibus dolor. <span><a href="#">Find out more.</a></span></p>
                 </div>
-                <div>
-                    <ul>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
+                <div class="aside-posts">
+                    <ul class="aside-posts__list">
+                        <li class="aside-posts__list-item">
+                            <a href="#">Lorem ipsum dolor sit.</a>
                         </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
+                        <li class="aside-posts__list-item">
+                            <a href="#">Lorem ipsum dolor sit.</a>
                         </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
+                        <li class="aside-posts__list-item">
+                            <a href="#">Lorem ipsum dolor sit.</a>
                         </li>
-                        <li>
-                            <p>Lorem ipsum dolor sit.</p>
+                        <li class="aside-posts__list-item">
+                            <a href="#">Lorem ipsum dolor sit.</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +70,7 @@
             <!-- aside section ends -->
             <!-- main starts -->
             <main>
-                <section>
+                <section class="blogpost-body-section">
                     <h2>My Favourite Travel Destinations</h2>
                     <p>Tuesday November 6th, 2018 by Willow</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis asperiores a dicta eos? Eveniet obcaecati doloribus, rerum commodi sapiente nemo vel laborum esse consequuntur animi dolores optio blanditiis eius?</p>
@@ -81,36 +82,36 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed nam assumenda sint, deserunt dolores fugiat, itaque ut tempora tenetur consequatur repudiandae inventore pariatur a dignissimos. Aliquam dignissimos amet ullam?</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae cum sunt mollitia qui! Qui, ducimus vel libero eos quia quae. Dolorem cum iusto suscipit perferendis labore eaque cumque hic quisquam.</p>
                 </section>
-                <section>
-                    <div>
-                        <div>
+                <section class="blogpost-comments-section">
+                    <div class="comment">
+                        <div class="comment__image">
                             <img src="./assets/blog-image-3.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="comment__content">
                             <p>Wednesday November 7th, 2018 by Barb</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae, dolores error, eos nisi numquam saepe illum inventore repudiandae ad harum eius distinctio natus libero amet soluta at possimus repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente accusamus iusto officia esse beatae fugiat, a molestias aut rem?</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="comment">
+                        <div class="comment__image">
                             <img src="./assets/blog-image-4.jpg" alt="">
                         </div>
-                        <div>
-                            <p>Wednesday November 7th, 2018 by Barb</p>
+                        <div class="comment__content">
+                            <p>Wednesday November 7th, 2018 by Daisy</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae, dolores error, eos nisi numquam saepe illum inventore repudiandae ad harum eius distinctio natus libero amet soluta at possimus repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente accusamus iusto officia esse beatae fugiat, a molestias aut rem?</p>
                         </div>
                     </div>
                 </section>
                 
-                <section>
-                    <form action="" method="POST" name="comment-form">
+                <section class="comment-form-section">
+                    <form class="message-form" action="" method="POST" name="comment-form">
                         <label for="user-name"></label>
                         <input type="text" name="user-name" placeholder="Name">
                         <label for="email-address"></label>
                         <input type="email" name="email-address" placeholder="Email address">
                         <label for="comment-form"></label>
                         <textarea name="comment-form" placeholder="Comment" cols="40" rows="10"></textarea>
-                    <button class="btn">Post comment</button>
+                    <button class="btn message-form__button">Post comment</button>
                     </form>
                 </section>
             </main>
