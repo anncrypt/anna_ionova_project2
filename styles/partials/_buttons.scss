@@ -3,6 +3,12 @@
     padding: 10px 20px;
     @include font-size(2rem);
     background-color: $accent-color;
+    &:hover {
+        // opacity: 0.5;
+        // color: $accent-color;
+        // background: $dark-color;
+        
+    }
 
     
 }

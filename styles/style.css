@@ -145,6 +145,9 @@ body {
   color: #1f1f1f;
   text-align: left; }
 
+section {
+  padding: 60px 0; }
+
 p {
   line-height: 3.2rem;
   margin-bottom: 30px; }
@@ -156,17 +159,8 @@ p {
 
 .wrapper--narrow {
   width: 80%;
-  margin: 20px auto;
-  padding: 20px 0;
+  margin: 0px auto;
   border: 2px solid yellow; }
-
-.main-heading {
-  font-family: "Abril Fatface", cursive;
-  font-size: 8rem;
-  font-weight: normal;
-  color: #1f1f1f;
-  text-transform: uppercase;
-  margin: 0; }
 
 h2 {
   font-family: "Abril Fatface", cursive;
@@ -223,10 +217,30 @@ h4 {
     min-height: 70vh;
     background: #345231; }
   .header.header--blog-news {
-    min-height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 30vh;
     background-image: url(../assets/blog-image-1.jpg); }
   .header.header--contact-me {
-    min-height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 30vh;
     width: 100%;
     background-image: url(../assets/contact-image-1.jpg);
     color: #f6f6f6; }
@@ -242,7 +256,10 @@ h4 {
     color: #f6f6f6;
     padding: 20px 20px; }
     .nav__item .nav__link:hover {
-      color: #e4a436; }
+      color: #e4a436;
+      -webkit-transition: 0.2s ease-in;
+      -o-transition: 0.2s ease-in;
+      transition: 0.2s ease-in; }
   .nav__item.nav__item--logo .nav__heading {
     color: #f6f6f6; }
 
@@ -268,8 +285,21 @@ h4 {
       margin: 0 auto;
       font-size: 14rem;
       color: #f6f6f6; }
-  .main-heading__container .header-photo .header-photo__image {
-    width: 100%; }
+  .main-heading__container .header-photo {
+    height: 70vh; }
+    .main-heading__container .header-photo .header-photo__image {
+      width: 100%; }
+
+.main-heading--small {
+  margin-bottom: -26px; }
+  .main-heading--small h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 8rem;
+    font-weight: normal;
+    color: #1f1f1f;
+    text-transform: uppercase;
+    margin: 0;
+    color: #f6f6f6; }
 
 .about-section {
   padding: 60px 0;
@@ -412,6 +442,73 @@ h4 {
     color: #1f1f1f; }
     .site-info-item__icon .site-info-item__link .fas {
       text-align: center; }
+
+.blog-body {
+  background: #f6f6f6; }
+
+.blog-news__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 80px auto; }
+  .blog-news__wrapper .aside-section {
+    width: 30%;
+    padding-bottom: 20px; }
+    .blog-news__wrapper .aside-section .aside-about {
+      background: white;
+      margin-bottom: 20px;
+      padding: 30px;
+      padding-bottom: 10px; }
+      .blog-news__wrapper .aside-section .aside-about img {
+        width: 100%;
+        display: block; }
+      .blog-news__wrapper .aside-section .aside-about .aside-about__heading {
+        margin-top: 30px;
+        margin-bottom: 0; }
+    .blog-news__wrapper .aside-section .aside-posts {
+      background: white;
+      padding: 30px;
+      padding-bottom: 10px; }
+      .blog-news__wrapper .aside-section .aside-posts .aside-posts__heading {
+        margin-top: 30px;
+        margin-bottom: 0; }
+  .blog-news__wrapper .blog-main {
+    width: 67%; }
+    .blog-news__wrapper .blog-main .blogpost-body-section {
+      padding: 30px; }
+      .blog-news__wrapper .blog-main .blogpost-body-section h3 {
+        margin-bottom: 20px; }
+      .blog-news__wrapper .blog-main .blogpost-body-section p {
+        margin-top: 0;
+        margin-bottom: 10px; }
+
+.blogpost-body-section,
+.comment {
+  background: white;
+  padding-bottom: 0; }
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px; }
+  .comment .comment__image {
+    width: 20%;
+    margin-right: 10px; }
+    .comment .comment__image img {
+      display: block;
+      width: 100%; }
+  .comment .comment__content {
+    width: 80%; }
+    .comment .comment__content .comment-text {
+      margin: 0; }
+
+.blogpost-body-section,
+.blogpost-comments-section {
+  border-bottom: 5px solid #709b6b; }
 
 .footer {
   width: 100%;
