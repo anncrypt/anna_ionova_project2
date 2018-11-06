@@ -1,0 +1,33 @@
+// COMMENT FORM
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .message-form__input-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+        input {
+            width: 49%;
+            border: none;
+            padding: 20px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        border: none;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .message-form__button {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+}

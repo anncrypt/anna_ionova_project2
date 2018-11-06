@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog&News</title>
+    <title>Blog & News</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
     crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="blog-body">
-    <!-- main wrapper that wraps the contents -->
+    <!-- main wrapper that wraps all website contents -->
     <div class="wrapper--main">
         <!-- header starts -->
         <header class="header header--blog-news">
+            <!-- navbar starts -->
             <nav class="nav nav--green">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Home</a>
+                        <a class="nav__link" href="index.html">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">About</a>
+                        <a class="nav__link" href="index.html">About</a>
                     </li>
                     <li class="nav__item nav__item--logo">
                         <!-- for accessibility purposes, so it doesn't appear as one of the menu options on screenreaders-->
                         <h2 class="nav__heading" aria-hidden="true">Willow</h2>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Blog</a>
+                        <a class="nav__link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
+            <!-- navbar ends -->
             <!-- container for main-heading--small -->
             <div class="main-heading main-heading--small wrapper--narrow">
-                    <h1>Blog & News</h1>
+                <h1>Blog & News</h1>
             </div>
         </header>
         <!-- header ends -->
@@ -71,6 +73,7 @@
             <!-- aside section ends -->
             <!-- main starts -->
             <main class="blog-main">
+                <!-- blogpost body -->
                 <section class="blogpost-body-section">
                     <h3>My Favourite Travel Destinations</h3>
                     <p>Tuesday November 6th, 2018 by Willow</p>
@@ -83,8 +86,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed nam assumenda sint, deserunt dolores fugiat, itaque ut tempora tenetur consequatur repudiandae inventore pariatur a dignissimos. Aliquam dignissimos amet ullam?</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae cum sunt mollitia qui! Qui, ducimus vel libero eos quia quae. Dolorem cum iusto suscipit perferendis labore eaque cumque hic quisquam.</p>
                 </section>
+                <!-- blogpost comments section starts-->
                 <section class="blogpost-comments-section">
-                    <div class="comment">
+                    <!-- comment 1 -->
+                    <div class="comment comment1">
                         <div class="comment__image">
                             <img src="./assets/blog-image-3.jpg" alt="user picture of young woman in a black hat">
                         </div>
@@ -93,7 +98,8 @@
                             <p class="comment-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae, dolores error, eos nisi numquam saepe illum inventore repudiandae ad harum eius distinctio natus libero amet soluta at possimus repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente accusamus iusto officia esse beatae fugiat, a molestias aut rem?</p>
                         </div>
                     </div>
-                    <div class="comment">
+                    <!-- comment 2 -->
+                    <div class="comment comment2">
                         <div class="comment__image">
                             <img src="./assets/blog-image-4.jpg" alt="user picture of young man">
                         </div>
@@ -103,7 +109,8 @@
                         </div>
                     </div>
                 </section>
-                
+                <!-- blogpost comments section ends-->
+                <!-- comment form section starts-->
                 <section class="comment-form-section">
                     <form class="message-form" action="" method="POST" name="comment-form">
                         <div class="message-form__input-container">
@@ -113,10 +120,11 @@
                             <input type="email" name="email-address" id="email-address" placeholder="Email address">
                         </div>
                         <label for="comment-textarea"></label>
-                        <textarea name="comment-textarea" id="comment-textarea" placeholder="Comment" cols="40" rows="10"></textarea>
+                        <textarea name="comment-textarea" id="comment-textarea" placeholder="Comment" cols="40" rows="10" maxlength="400"></textarea>
                     <button class="btn message-form__button">Post comment</button>
                     </form>
                 </section>
+                <!-- comment form section ends-->
             </main>
             <!-- main ends -->
         </div>

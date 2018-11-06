@@ -11,30 +11,32 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="contact-body">
-    <!-- main wrapper that wraps the contents -->
-    <div class="wrapper">
+    <!-- main wrapper that wraps all website contents -->
+    <div class="wrapper--main">
         <!-- header starts -->
         <header class="header header--contact-me">
+            <!-- navbar starts -->
             <nav class="nav nav--green">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Home</a>
+                        <a class="nav__link" href="index.html">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">About</a>
+                        <a class="nav__link" href="index.html">About</a>
                     </li>
                     <li class="nav__item nav__item--logo">
                         <!-- for accessibility purposes, so it doesn't appear as one of the menu options on screenreaders-->
                         <h2 class="nav__heading" aria-hidden="true">Willow</h2>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Blog</a>
+                        <a class="nav__link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
+            <!-- navbar ends -->
             <!-- container for main-heading--small -->
             <div class="main-heading main-heading--small wrapper--narrow">
                 <h1>Contact me</h1>
@@ -47,10 +49,24 @@
             <aside class="aside-section">
                 <div class="aside-content">
                     <ul class="aside-content__social-list">
-                        <li class="social-list-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social-list-item"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social-list-item"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="social-list-item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social-list-item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="fab fa-twitter"></i></a></li>
+                        <li class="social-list-item">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                     <div class="aside-content__contact">
                         <p class="aside-content-email">
@@ -65,6 +81,8 @@
                     </div>
                 </div>
             </aside>
+            <!-- aside section ends -->
+            <!-- contact form section starts -->
             <section class="contact-form-section">
                 <form class="message-form" action="" method="POST" name="comment-form">
                     <div class="message-form__input-container">
@@ -78,7 +96,9 @@
                     <button class="btn message-form__button">Post comment</button>
                 </form>
             </section>
+            <!-- contact form section ends -->
         </div>
+        <!-- wrapper--narrow ends -->
         <!-- footer starts -->
         <footer class="footer">
             <p>Copyright &copy 2018 HackerYou</p>

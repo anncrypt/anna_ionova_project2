@@ -1,5 +1,6 @@
 // HOME PAGE 1
 // ABOUT SECTION
+
 .about-section {
     padding: 60px 0;
     background: $light-color;
@@ -13,6 +14,7 @@
 }
 
 // BLOGPOST SECTION
+
 .blog-section {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +55,7 @@
 
 
 // JOURNEY SECTION
+
 .journey-section {
     background: $light-color;
     padding: 60px 0;
@@ -83,6 +86,7 @@
 
 
 // BANNER SECTION
+
 .banner-image {
     background-image: url(../assets/home-image-5.jpg);
     background-size: auto;
@@ -116,9 +120,10 @@
 
 
 // INFO SECTION
+
 .site-info-section {
-    background: $light-color;
     padding: 30px 0;
+    background: $light-color;
     
     .site-info-section__wrapper {
         display: flex;
@@ -142,8 +147,8 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    padding: 20px;
     margin-right: 20px;
+    padding: 20px;
     background-color: $accent-color;
     
     .site-info-item__link {
@@ -157,98 +162,19 @@
     }
 }
 
-// BLOG & NEWS PAGE 2
+// LOG & NEWS PAGE 2
+// BLOG SECTION
+
 .blog-body {
     background: $light-color;
 }
 
-// ASIDE SECTION
 .wrapper--contact-content,
-// .blog-news__wrapper,
 .wrapper--blog-news, {
     display: flex;
     justify-content: space-between;
     margin: 80px auto;
 }
-
-.aside-section {
-    width: 30%;
-    padding-bottom: 20px;
-}
-
-.aside-content {
-    margin-bottom: 20px;
-    padding: 30px;
-    padding-bottom: 10px;
-    background: white;
-
-    img {
-        display: block;
-        width: 100%;
-    }
-
-    .aside-content__heading {
-        margin-top: 30px;
-        margin-bottom: 0;
-    }
-
-    p {
-        margin-top: 0;
-        margin-bottom: 5px;
-        // color: $secondary-color;
-        // font-weight: bold;
-
-        a:hover {
-            opacity: 0.6;
-        }
-    }
-
-    .aside-content-email {
-        font-weight: bold;
-        margin: 15px 0;
-    }
-
-    .aside-content__text {
-        a {
-            color: $secondary-color;
-            font-weight: bold;
-            &:hover {
-                opacity: 0.8;
-            }
-        }
-    }
-}
-
-.aside-posts {
-    padding: 30px;
-    padding-bottom: 10px;
-    background: white;
-
-    .aside-posts__heading {
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
-}
-
-.aside-posts__list {
-    list-style-type: none;
-    padding-left: 10px;
-    
-    .aside-posts__list-item {
-        margin: 10px;
-
-    &:hover a {
-        color: $secondary-color;
-    }
-
-        &::before {
-            content: "•"; 
-            font-size: 1.9rem;
-            margin-right: 10px;
-        }
-    }
-}
-
 
 .blog-main {
     width: 67%;
@@ -276,13 +202,11 @@
 
 .comment {
     display: flex;
-    // margin: 0 auto;
     padding: 40px;
     
     .comment__image {
         width: 20%;
         max-width: 90px;
-
         margin-right: 20px;
 
         img {
@@ -306,41 +230,9 @@
     
 }
 
-// COMMENT FORM
 
-.message-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+// CONTACT ME PAGE 3
 
-    .message-form__input-container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        width: 100%;
-        input {
-            padding: 20px;
-            width: 49%;
-            border: none;
-        }
-    }
-
-    textarea {
-        border: none;
-        padding: 20px;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .message-form__button {
-        width: 100%;
-        box-shadow: none;
-        border: none;
-    }
-}
-
-
-// CONTACT PAGE 3
 .contact-body {
     background: $light-color;
 }

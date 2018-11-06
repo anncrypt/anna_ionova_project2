@@ -1,0 +1,80 @@
+// ASIDE SECTION 
+
+.aside-section {
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+// aside content container
+.aside-content {
+    margin-bottom: 20px;
+    padding: 30px;
+    padding-bottom: 10px;
+    background: white;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .aside-content__heading {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 5px;
+
+        a:hover {
+            opacity: 0.6;
+        }
+    }
+
+    // styles for contact me page
+    .aside-content-email {
+        margin: 15px 0;
+        font-weight: bold;
+    }
+
+    .aside-content__text {
+        a {
+            font-weight: bold;
+            color: $secondary-color;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+// aside post links container
+.aside-posts {
+    padding: 30px;
+    padding-bottom: 10px;
+    background: white;
+
+    .aside-posts__heading {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.aside-posts__list {
+    list-style-type: none;
+    padding-left: 10px;
+    
+    .aside-posts__list-item {
+        margin: 10px;
+
+    &:hover a {
+        color: $secondary-color;
+    }
+
+        &::before {
+            content: "•"; 
+            margin-right: 10px;
+            font-size: 1.9rem;
+        }
+    }
+}
