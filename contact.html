@@ -10,12 +10,12 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="contact-body">
     <!-- main wrapper that wraps the contents -->
     <div class="wrapper">
         <!-- header starts -->
         <header class="header header--contact-me">
-            <nav class="nav">
+            <nav class="nav nav--green">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#">Home</a>
@@ -23,8 +23,9 @@
                     <li class="nav__item">
                         <a class="nav__link" href="#">About</a>
                     </li>
-                    <li class="nav__item nav__item--featured">
-                        <h2 class="nav__heading">Willow</h2>
+                    <li class="nav__item nav__item--logo">
+                        <!-- for accessibility purposes, so it doesn't appear as one of the menu options on screenreaders-->
+                        <h2 class="nav__heading" aria-hidden="true">Willow</h2>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="#">Blog</a>
@@ -35,44 +36,51 @@
                 </ul>
             </nav>
             <!-- container for main-heading--small -->
-            <!-- <div class="main-heading main-heading--small"> -->
-            <h1>Blog & News</h1>
-            <!-- </div> -->
+            <div class="main-heading main-heading--small wrapper--narrow">
+                <h1>Contact me</h1>
+            </div>
         </header>
         <!-- header ends -->
         <!-- small wrapper starts -->
-        <div class="wrapper--small">
+        <div class="wrapper--narrow wrapper--contact-content">
             <!-- aside section starts -->
             <aside class="aside-section">
-                <ul class="aside-social">
-                    <li class="aside-social__item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="aside-social__item"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li class="aside-social__item"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="aside-social__item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-                <div class="aside-contact">
-                    <p class="aside-contact__email">info@email.com</p>
-                    <p>123-456-7890</p>
-                    <p>123 Queen Street West, Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V 2D5</p>
+                <div class="aside-content">
+                    <ul class="aside-content__social-list">
+                        <li class="social-list-item"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-list-item"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-list-item"><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="social-list-item"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="aside-content__contact">
+                        <p class="aside-content-email">
+                            <a href="mailto:info@email.com">info@email.com</a>
+                        </p>
+                        <p>
+                            <a href="tel:123-456-7809">123-456-7890</a>
+                        </p>
+                        <p>123 Queen Street West, Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V 2D5</p>
+                    </div>
                 </div>
             </aside>
             <section class="contact-form-section">
-                <form class="message-form message-form--contact"
-                action="" method="POST" name="comment-form">
-                    <label for="user-name"></label>
-                    <input type="text" name="user-name" placeholder="Name">
-                    <label for="email-address"></label>
-                    <input type="email" name="email-address" placeholder="Email address">
-                    <label for="comment-form"></label>
-                    <textarea name="comment-form" placeholder="Comment" cols="40" rows="10"></textarea>
+                <form class="message-form" action="" method="POST" name="comment-form">
+                    <div class="message-form__input-container">
+                        <input type="text" name="user-name" id="user-name" placeholder="Name">
+                        <label for="user-name"></label>
+                        <label for="email-address"></label>
+                        <input type="email" name="email-address" id="email-address" placeholder="Email address">
+                    </div>
+                    <label for="comment-textarea"></label>
+                    <textarea name="comment-textarea" id="comment-textarea" placeholder="Comment" cols="40" rows="10"></textarea>
                     <button class="btn message-form__button">Post comment</button>
                 </form>
             </section>
         </div>
         <!-- footer starts -->
-        <footer>
+        <footer class="footer">
             <p>Copyright &copy 2018 HackerYou</p>
         </footer>
         <!-- footer ends -->

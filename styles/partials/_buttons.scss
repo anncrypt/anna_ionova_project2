@@ -4,9 +4,8 @@
     @include font-size(2rem);
     background-color: $accent-color;
     &:hover {
-        // opacity: 0.5;
-        // color: $accent-color;
-        // background: $dark-color;
+        box-shadow: 0 0 9px rgba(0,0,0,.6); 
+        transition: 0.3s ease-in-out;
         
     }
 

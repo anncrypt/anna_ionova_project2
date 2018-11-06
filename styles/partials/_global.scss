@@ -15,11 +15,16 @@ body {
 section {
     padding: 60px 0;
 }
+
 p {
     line-height: 3.2rem;
     margin-bottom: 30px;
 }
 
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
 
 .wrapper--main {
     max-width: 1600px;
@@ -30,14 +35,13 @@ p {
 .wrapper--narrow {
     width: 80%;
     margin: 0px auto;
-    // padding: 20px 0;
     border: 2px solid yellow;
 }
 
 // h1
-// .main-heading {
-//     @include font-size(8rem);
-// }
+.main-heading {
+    @include font-size(8rem);
+}
 
 h2 {
     @include font-size(4.2rem);
