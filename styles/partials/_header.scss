@@ -85,7 +85,6 @@
 .main-heading__container {
     display: flex;
     align-items: center;
-
     
     // main heading large styling
     .main-heading--large {
@@ -93,6 +92,15 @@
         position: relative;
         margin-left: 50px;
         margin-right: 30px;
+
+        .main-heading__mobile-text {
+            display: none;
+            text-transform: uppercase;
+            color: $light-color;
+            font-size: 2rem;
+            font-family: $base-font;
+            // margin-top: 30px;
+        }
 
         .main-heading__image {
             height: 100%;
@@ -134,6 +142,30 @@
         @include font-size(8rem);
         color: $light-color;
     }
+}
+
+
+/* HAMBURGER MENU DEFAULTS */
+.mobile-nav {
+    display: none;
+}
+
+.hamburger-container {
+    width: 100%;
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+.open-hamburger {
+    display: none;
+
+    margin: 20px;
+}
+
+.preventAllScrollingOnBody {
+    overflow: hidden;
 }
 
 

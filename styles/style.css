@@ -142,7 +142,10 @@ body {
   font-weight: normal;
   font-size: 1.8rem;
   color: #1f1f1f;
-  text-align: left; }
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 section {
   padding: 100px 0; }
@@ -156,6 +159,7 @@ a {
   color: #1f1f1f; }
 
 .wrapper--main {
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto; }
 
@@ -291,6 +295,12 @@ h4 {
     position: relative;
     margin-left: 50px;
     margin-right: 30px; }
+    .main-heading__container .main-heading--large .main-heading__mobile-text {
+      display: none;
+      text-transform: uppercase;
+      color: #f6f6f6;
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif; }
     .main-heading__container .main-heading--large .main-heading__image {
       height: 100%;
       position: absolute;
@@ -328,6 +338,26 @@ h4 {
     text-transform: uppercase;
     margin: 0;
     color: #f6f6f6; }
+
+/* HAMBURGER MENU DEFAULTS */
+.mobile-nav {
+  display: none; }
+
+.hamburger-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.open-hamburger {
+  display: none;
+  margin: 20px; }
+
+.preventAllScrollingOnBody {
+  overflow: hidden; }
 
 .btn {
   text-decoration: none;
@@ -760,6 +790,8 @@ h4 {
       align-items: center;
       width: 100%;
       margin: 50px 0; }
+      .blogpost .blogpost__content h3 {
+        text-align: center; }
       .blogpost .blogpost__content p {
         text-align: center;
         margin-bottom: 10px; }
@@ -863,19 +895,36 @@ h4 {
     -ms-flex-direction: column;
     flex-direction: column; }
     .main-heading__container .main-heading--large {
-      margin: 0; }
+      margin: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .main-heading__container .main-heading--large .main-heading__image {
-        left: 10px; }
-      .main-heading__container .main-heading--large .main-heading__image img {
-        width: 56%; }
+        display: none; }
+      .main-heading__container .main-heading--large .main-heading__mobile-text {
+        display: block; }
       .main-heading__container .main-heading--large .main-heading__text {
         font-size: 7rem;
         text-align: center; }
     .main-heading__container .header-photo .header-photo__image {
       width: 100%; }
-  .blogpost .blogpost__image img {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+  .blogpost .blogpost__image {
+    width: 100%; }
+    .blogpost .blogpost__image img {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      width: 100%;
+      height: auto; }
+  .site-info-section .site-info-section__wrapper {
+    width: 90%; }
   .journey-section {
     padding: 50px 0; }
   .journey-section__wrapper {
@@ -893,9 +942,14 @@ h4 {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       width: 60%;
       margin-bottom: 40px; }
       .journey-section__wrapper .journey-section__image img {
+        width: 100%;
+        height: auto;
         -webkit-box-shadow: none;
         box-shadow: none; }
     .journey-section__wrapper .journey-section__content {
@@ -917,7 +971,8 @@ h4 {
   .main-heading--small h1 {
     font-size: 4rem; }
   .header.header--blog-news {
-    background-size: cover; }
+    background-size: cover;
+    min-height: 20vh; }
   .wrapper--blog-news .aside-section .aside-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -947,24 +1002,10 @@ h4 {
       .comment .comment__content .comment-text:first-child {
         margin-bottom: 10px;
         font-size: 1.4rem; }
-  .header .nav.nav--green {
-    background: none; }
-  .header .nav .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
-    .header .nav .nav__list .nav__item {
-      margin-bottom: 8px; }
-    .header .nav .nav__list .nav__item:nth-child(3) {
-      -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-      order: 1; }
-    .header .nav .nav__list .nav__heading {
-      font-size: 2.8rem; }
+  .header .nav {
+    display: none; }
+  .header.header--contact-me {
+    min-height: 20vh; }
   .message-form .message-form__input-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -973,4 +1014,50 @@ h4 {
   .message-form .message-form__input-container input {
     width: 100%; }
     .message-form .message-form__input-container input:first-child {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  /* HAMBURGER MENU */
+  .open-hamburger {
+    display: block;
+    float: right; }
+  .open-hamburger .fas,
+  .close-hamburger .fas {
+    color: #f6f6f6;
+    font-size: 3rem; }
+  /* OPEN HAMBURGER */
+  .sectionHome .narrowWrapper {
+    position: relative; }
+  .mobile-nav__controls {
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px; }
+  .mobile-nav__controls a {
+    display: block; }
+  .mobile-nav {
+    background: #709b6b;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .mobile-nav__list {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none; }
+  .mobile-nav__list li {
+    margin-bottom: 30px;
+    text-align: center; }
+  .mobile-nav__list li a {
+    text-decoration: none;
+    color: #f6f6f6;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .mobile-nav__list li:active {
+    background: rgba(0, 0, 0, 0.192); }
+  /* END OF HAMBURGER MENU */ }
+
+@media (max-width: 540px) {
+  .main-heading__container .header-photo {
+    width: 80%; } }

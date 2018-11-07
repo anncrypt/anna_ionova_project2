@@ -10,6 +10,7 @@ body {
     font-size: 1.8rem;
     color: $dark-color;
     text-align: left;
+    display: flex;
 }
 
 section {
@@ -27,6 +28,7 @@ a {
 }
 
 .wrapper--main {
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     // border: 2px tomato solid;

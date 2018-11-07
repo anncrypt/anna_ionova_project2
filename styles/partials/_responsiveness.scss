@@ -29,8 +29,6 @@
     }
 }
 
-
-
 @media (max-width: 992px) {    
     // PAGE 1 - HOME
     // H1
@@ -98,6 +96,9 @@
             width: 100%;
             margin: 50px 0;
 
+            h3 {
+                text-align: center;
+            }
             p {
                 text-align: center;
                 margin-bottom: 10px;
@@ -193,7 +194,6 @@
         }
     }
 
-
     // PAGE 3 - CONTACT
     // H1
     .header {
@@ -258,12 +258,18 @@
         
         .main-heading--large {
             margin: 0;
-            
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             .main-heading__image {
-                left: 10px;
+                display: none;
             }
-            .main-heading__image img {
-                width: 56%;
+
+            .main-heading__mobile-text {
+                display: block;
             }
             
             .main-heading__text {
@@ -281,11 +287,20 @@
     
     .blogpost {
         .blogpost__image {
+            width: 100%;
+
             img {
                 box-shadow: none;
+                width: 100%;
+                height: auto;
             }
         }
-        
+    }
+
+    .site-info-section {
+        .site-info-section__wrapper {
+            width: 90%;
+        }
     }
     
     .journey-section {
@@ -299,10 +314,13 @@
         .journey-section__image {
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 60%;
             margin-bottom: 40px;
             
             img {
+                width: 100%;
+                height: auto;
                 box-shadow: none;
             }
         }
@@ -327,6 +345,7 @@
     
     .header.header--blog-news {
         background-size: cover;
+        min-height: 20vh;
     }
     
     .wrapper--blog-news {
@@ -357,7 +376,6 @@
         }
 
         .comment__content {
-            // font-size: 
             width: 100%;
 
             .comment-text:first-child {
@@ -368,27 +386,14 @@
     }
 
     // PAGE 2, 3 - BLOG & CONTACT
+
     .header .nav {
-        &.nav--green {
-            background: none;
-        }
+        display: none;
+    }
 
-        .nav__list {
-            display: flex;
-            flex-direction: column-reverse;
-
-            .nav__item {
-                margin-bottom: 8px;
-            }
-
-            .nav__item:nth-child(3) {
-                order: 1;
-            }
-
-            .nav__heading {
-                font-size: 2.8rem;
-            }
-        }
+    // PAGE 3 CONTACT
+    .header.header--contact-me {
+        min-height: 20vh;
     }
 
     .message-form {
@@ -403,6 +408,76 @@
             &:first-child {
                 margin-bottom: 20px;
             }
+        }
+    }
+
+     /* HAMBURGER MENU */
+    .open-hamburger {
+        display: block;
+        float: right;
+    }
+
+    .open-hamburger .fas,
+     .close-hamburger .fas {
+        color: #f6f6f6;
+        font-size: 3rem;
+    }
+
+    /* OPEN HAMBURGER */
+    .sectionHome .narrowWrapper {
+        position: relative;
+    }
+
+    .mobile-nav__controls {
+        text-align: right;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .mobile-nav__controls a {
+        display: block;
+    }
+
+    .mobile-nav {
+        background: $secondary-color;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .mobile-nav__list {
+        margin-top: 20px;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .mobile-nav__list li {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .mobile-nav__list li a {
+        text-decoration: none;
+        color: #f6f6f6;
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mobile-nav__list li:active {
+        background: rgba(0, 0, 0, 0.192);
+    }
+    /* END OF HAMBURGER MENU */
+}
+
+@media (max-width: 540px) {
+    .main-heading__container {
+        .header-photo {
+            width: 80%;
         }
     }
 }
