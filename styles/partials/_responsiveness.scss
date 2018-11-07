@@ -1,5 +1,14 @@
 // RESPONSIVENESS
+/*media queries:
 
+1) max-width 1200px
+2) max-width 1100px
+3) max-width 992px
+4) max-width 768px
+5) max-width 540px
+*/
+
+// 1
 @media (max-width: 1200px) {
 
     .wrapper--narrow {
@@ -12,7 +21,7 @@
     }
 }
 
-
+// 2
 @media (max-width: 1100px) {
     // PAGE 1 - HOME
     // H1
@@ -29,6 +38,7 @@
     }
 }
 
+// 3
 @media (max-width: 992px) {    
     // PAGE 1 - HOME
     // H1
@@ -52,6 +62,7 @@
             }
         }    
     }
+
     // ABOUT SECTION
     .about-section {
         padding-top: 30px;
@@ -150,7 +161,6 @@
                 text-align: center;
                 margin-bottom: 20px;
             }
-
         }
     }
 
@@ -204,7 +214,6 @@
                 text-align: center;
                 margin-bottom: 20px;
             }
-
         }
     }
 
@@ -250,6 +259,7 @@
     }
 }
 
+// 4
 @media (max-width: 768px) {
 
     // PAGE 1 - HOME
@@ -439,6 +449,7 @@
         display: block;
     }
 
+    // mobile nav links
     .mobile-nav {
         background: $secondary-color;
         height: 100vh;
@@ -462,7 +473,7 @@
 
     .mobile-nav__list li a {
         text-decoration: none;
-        color: #f6f6f6;
+        color: $light-color;
         font-size: 3rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -471,9 +482,29 @@
     .mobile-nav__list li:active {
         background: rgba(0, 0, 0, 0.192);
     }
+
+    // mobile nav social links
+    .mobile-nav__social-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 70px;
+
+        .social-list-item {
+            a {
+                color: $light-color;
+                font-size: 4rem;
+                &:active {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
     /* END OF HAMBURGER MENU */
 }
 
+// 5
 @media (max-width: 540px) {
     .main-heading__container {
         .header-photo {
