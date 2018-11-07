@@ -113,19 +113,20 @@
         height: 70vh;
         width: 100%;
         position: relative;
-
+        
         .header-photo__image {
-            width: 100%;
+            width: 90%;
             position: absolute;
-            left: 10px;
-            top: 10px;
+            left: 20px;
+            top: 20px;
+            box-shadow: 18px 18px white;
         }
     }
 }
 
-// // main heading small styling
+// main heading small styling
 .main-heading--small {
-    margin-bottom: -26px;
+    margin-bottom: -25px;
 
     h1 {
         @include font-size(8rem);

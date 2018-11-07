@@ -145,7 +145,7 @@ body {
   text-align: left; }
 
 section {
-  padding: 60px 0; }
+  padding: 100px 0; }
 
 p {
   line-height: 3.2rem;
@@ -195,6 +195,31 @@ h4 {
   text-transform: uppercase;
   margin: 0;
   margin: 0; }
+
+@media (max-width: 992px) {
+  .wrapper--narrow {
+    width: 100%;
+    margin: 0px auto; }
+  .gallery-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .gallery-list .gallery-list__item {
+      width: 100%; }
+  .banner-image {
+    -o-object-fit: contain;
+    object-fit: contain; }
+  .site-info-section .site-info-section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .site-info-section .site-info-section__wrapper .site-info-item {
+      width: 100%; } }
 
 .header {
   display: -webkit-box;
@@ -306,13 +331,15 @@ h4 {
     width: 100%;
     position: relative; }
     .main-heading__container .header-photo .header-photo__image {
-      width: 100%;
+      width: 90%;
       position: absolute;
-      left: 10px;
-      top: 10px; }
+      left: 20px;
+      top: 20px;
+      -webkit-box-shadow: 18px 18px white;
+      box-shadow: 18px 18px white; }
 
 .main-heading--small {
-  margin-bottom: -26px; }
+  margin-bottom: -25px; }
   .main-heading--small h1 {
     font-family: "Abril Fatface", cursive;
     font-size: 8rem;
@@ -388,8 +415,13 @@ h4 {
       margin-right: 10px;
       font-size: 1.9rem; }
 
+.about-section,
+.journey-section,
+.site-info-section {
+  background: #f6f6f6; }
+
 .about-section {
-  padding: 60px 0;
+  padding-bottom: 150px;
   background: #f6f6f6; }
   .about-section .about-section__wrapper {
     display: -webkit-box;
@@ -407,7 +439,8 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 0; }
 
 .blogpost {
   display: -webkit-box;
@@ -416,32 +449,61 @@ h4 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 40px 0; }
+  margin-top: -30px;
+  margin-bottom: 40px; }
   .blogpost .blogpost__image {
-    width: 50%; }
+    width: 50%;
+    height: 375px;
+    position: relative;
+    background: #709b6b; }
     .blogpost .blogpost__image img {
       display: block;
-      width: 100%;
-      -webkit-box-shadow: 20px 20px #709b6b, -170px 20px #709b6b;
-      box-shadow: 20px 20px #709b6b, -170px 20px #709b6b; }
+      width: 600px;
+      position: absolute;
+      right: 10px;
+      bottom: 20px;
+      -webkit-box-shadow: 20px 20px #709b6b;
+      box-shadow: 20px 20px #709b6b; }
   .blogpost .blogpost__content {
-    width: 40%;
-    margin: 20px 60px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0 60px; }
 
 .blogpost--left-side {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-  .blogpost--left-side .blogpost__image img {
-    -webkit-box-shadow: 20px 20px #345231, 170px 20px #345231;
-    box-shadow: 20px 20px #345231, 170px 20px #345231; }
+  flex-direction: row-reverse;
+  margin-top: 40px;
+  margin-bottom: -50px; }
+  .blogpost--left-side .blogpost__image {
+    margin-left: 20px;
+    background: #345231; }
+    .blogpost--left-side .blogpost__image img {
+      left: -20px;
+      -webkit-box-shadow: 20px 20px #345231;
+      box-shadow: 20px 20px #345231; }
   .blogpost--left-side .blogpost__content {
-    text-align: right; }
-
-.journey-section {
-  background: #f6f6f6;
-  padding: 60px 0; }
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: -20px; }
 
 .journey-section__wrapper {
   display: -webkit-box;
@@ -466,6 +528,7 @@ h4 {
 .banner-image {
   background-image: url(../assets/home-image-5.jpg);
   background-size: auto;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
   object-fit: cover;
   min-height: 50vh; }
@@ -489,8 +552,7 @@ h4 {
     margin-right: 0; }
 
 .site-info-section {
-  padding: 30px 0;
-  background: #f6f6f6; }
+  padding: 70px 0; }
   .site-info-section .site-info-section__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -508,7 +570,7 @@ h4 {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      width: 50%;
+      width: 48%;
       margin: 10px 0; }
 
 .site-info-item__icon {
@@ -550,6 +612,8 @@ h4 {
 .blog-main {
   width: 67%; }
   .blog-main .blogpost-body-section {
+    background: white;
+    margin-bottom: 30px;
     padding: 30px; }
     .blog-main .blogpost-body-section h3 {
       margin-bottom: 20px; }
@@ -557,16 +621,16 @@ h4 {
       margin-top: 0;
       margin-bottom: 10px; }
 
-.blogpost-body-section,
-.comment {
-  background: white;
-  padding-bottom: 0; }
+.blogpost-comments-section {
+  padding: 0; }
 
 .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px; }
+  padding: 40px;
+  background: white;
+  margin-top: 20px; }
   .comment .comment__image {
     width: 20%;
     max-width: 90px;
@@ -580,7 +644,7 @@ h4 {
       margin: 0; }
 
 .blogpost-body-section,
-.blogpost-comments-section {
+.comment:last-child {
   border-bottom: 5px solid #709b6b; }
 
 .contact-body {
@@ -604,6 +668,10 @@ h4 {
       color: #345231; }
     .aside-content__social-list .social-list-item a:hover {
       opacity: 0.6; }
+
+.comment-form-section {
+  padding: 0;
+  margin: 30px 0; }
 
 .message-form {
   display: -webkit-box;

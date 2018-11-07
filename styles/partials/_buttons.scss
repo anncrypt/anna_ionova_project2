@@ -5,8 +5,8 @@
     @include font-size(2rem);
     padding: 10px 20px;
     background-color: $accent-color;
-    &:hover {
-        box-shadow: 0 0 9px rgba(0,0,0,.6); 
-        transition: 0.3s ease-in-out;
-    }
+&:hover {
+    box-shadow: 0 0 9px rgba(0,0,0,.6); 
+    transition: 0.3s ease-in-out;
+}
 }
